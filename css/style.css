@@ -8,3 +8,11 @@ header .logo {
 header .painel {
   width: 100%;
 }
+#modal1 img,
+#modal2 img {
+  width: 100%;
+  height: 400px;
+}
+.card-image img {
+  cursor: pointer;
+}
