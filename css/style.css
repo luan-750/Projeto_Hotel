@@ -16,3 +16,9 @@ header .painel {
 .card-image img {
   cursor: pointer;
 }
+#sex_masculino,
+#sex_feminino {
+  margin-left: 80px !important;
+  padding-top: 10px;
+  position: relative;
+}
