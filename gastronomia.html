@@ -28,7 +28,18 @@
       <nav>
         <div class="nav-wrapper red darken-4" style="text-align: left;">
           <a href="index.html" class="brand-logo">Grand Hotel</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="hotel.html">Hotel</a></li>
+            <li><a href="suites.html">Suites</a></li>
+            <li><a href="gastronomia.html">Gastronomia</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+
+          <ul class="sidenav" id="mobile-demo">
             <li><a href="hotel.html">Hotel</a></li>
             <li><a href="suites.html">Suites</a></li>
             <li><a href="gastronomia.html">Gastronomia</a></li>
@@ -43,11 +54,134 @@
       <img src="img/painel2.jpg" alt="entrada do hotel" class="painel" />
     </header>
 
-    <main></main>
+    <main>
+      <div id="culi">
+        <h2>Culinária Tradicional</h2>
+        <hr />
+        <p>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam natus
+            impedit obcaecati a aut! Enim, sunt amet doloribus alias laborum,
+            modi, dolores perspiciatis beatae ab a vel reprehenderit nihil
+            corrupti!</span
+          >
+          <span
+            >Ullam minus labore minima eveniet? Impedit itaque molestias rem
+            enim voluptatem repellat consequuntur veritatis. Sint, provident ex.
+            Quisquam inventore nihil, alias necessitatibus, neque mollitia
+            molestiae magnam libero illum id saepe.</span
+          >
+        </p>
+      </div>
+
+      <!-- Início dos cards-->
+      <div id="cards" class="row">
+        <!--Início da linha-->
+        <div class="col s12 m6">
+          <h2 class="header">Self Service</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img
+                src="img/gastronomia1.jpg"
+                class="modal-trigger"
+                href="#modal1"
+              />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  corporis commodi ut sit eaque quaerat quidem illo, id
+                  voluptatem officiis possimus cum deleniti deserunt quos
+                  officia necessitatibus quas unde distinctio!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <h2 class="header">Pratos Especiais</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img
+                src="img/gastronomia3.jpg"
+                class="modal-trigger"
+                href="#modal2"
+              />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  corporis commodi ut sit eaque quaerat quidem illo, id
+                  voluptatem officiis possimus cum deleniti deserunt quos
+                  officia necessitatibus quas unde distinctio!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <h2 class="header">Cfé da Manhã</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img
+                src="img/gastronomia2.jpg"
+                class="modal-trigger"
+                href="#modal3"
+              />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  corporis commodi ut sit eaque quaerat quidem illo, id
+                  voluptatem officiis possimus cum deleniti deserunt quos
+                  officia necessitatibus quas unde distinctio!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <h2 class="header">Aperitivos</h2>
+          <div class="card horizontal">
+            <div class="card-image">
+              <img
+                src="img/gastronomia4.jpg"
+                class="modal-trigger"
+                href="#modal4"
+              />
+            </div>
+            <div class="card-stacked">
+              <div class="card-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  corporis commodi ut sit eaque quaerat quidem illo, id
+                  voluptatem officiis possimus cum deleniti deserunt quos
+                  officia necessitatibus quas unde distinctio!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Fim da linha-->
+    </main>
 
     <footer></footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".sidenav").sidenav();
+      });
+    </script>
   </body>
 </html>

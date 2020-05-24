@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 header {
   text-align: center;
 }
@@ -21,4 +26,13 @@ header .painel {
   margin-left: 80px !important;
   padding-top: 10px;
   position: relative;
+}
+#hotel {
+  margin: 10%;
+}
+#culi {
+  margin: 10%;
+}
+#cards {
+  margin: 10%;
 }
